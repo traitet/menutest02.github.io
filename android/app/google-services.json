@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "577333614807",
+    "firebase_url": "https://menutest02-c4048.firebaseio.com",
+    "project_id": "menutest02-c4048",
+    "storage_bucket": "menutest02-c4048.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577333614807:android:fa3150c6df29c9a0837892",
+        "android_client_info": {
+          "package_name": "com.example.menutest02"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577333614807-3cs72rds4c342o8blb6gcd57tbkfceut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ-5EOEJZPxDljPoSI2Kfeb6IW9Zktpkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577333614807-3cs72rds4c342o8blb6gcd57tbkfceut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
