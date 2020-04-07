@@ -87,7 +87,6 @@ class UpdateProfilePage extends StatefulWidget {
              //=====================================================================
             // 2) TEXT CONTROL
             //======================================================================  
-
             TextFormField(decoration: InputDecoration(labelText: '*E-mail', prefixIcon: Icon(Icons.email)),controller: _usernameController),
             TextFormField(decoration: InputDecoration(labelText: '*Full Name', prefixIcon: Icon(Icons.near_me)),controller: _fullnameController,),          
             TextFormField(decoration: InputDecoration(labelText: '*Password', prefixIcon: Icon(Icons.vpn_key)),controller: _passwordController,),                       
