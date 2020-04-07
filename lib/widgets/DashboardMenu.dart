@@ -7,6 +7,10 @@ import 'NavDrawer.dart';
 // 2) MAIN CLASS
 //===========================================================
 class DashboardMenu extends StatefulWidget {
+  final String username;
+  DashboardMenu({Key key,  this.username})
+      : super(key: key);
+
   @override
   _DashboardMenuState createState() => _DashboardMenuState();
 }
@@ -23,7 +27,7 @@ class _DashboardMenuState extends State<DashboardMenu> {
 //=========================================================== 
       drawer: NavDrawer(),     
       appBar: AppBar(
-        title: Text("Main Menu"),
+        title: Text("Main Menu: " + widget.username),
         elevation: .1,
         //backgroundColor: Color.fromRGBO(49, 87, 110, 1.0),
       ),

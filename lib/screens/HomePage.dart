@@ -2,11 +2,12 @@
 // 1) IMPORT
 //============================================================================
 import 'package:flutter/material.dart';
-import 'package:menutest02/widgets/CustomIcons.dart';
+import 'package:menutest02/services/logger_service.dart';
 import 'package:menutest02/widgets/DashboardMenu.dart';
-import 'package:menutest02/widgets/SocialIcon.dart';
 import 'ForgotPasswordPage.dart';
 import 'SignupPage.dart';
+// import 'package:menutest02/widgets/SocialIcon.dart';
+// import 'package:menutest02/widgets/CustomIcons.dart';
 
 //============================================================================
 // 2)  MAIN CLASS: PAGE
@@ -23,6 +24,7 @@ class HomePage extends StatefulWidget {
 //============================================================================
 class _HomePageState extends State<HomePage> {
   int _counter = 2020;
+  final _usernameController = TextEditingController();
   //============================================================================
   // FUNTION
   //============================================================================
@@ -84,8 +86,7 @@ class _HomePageState extends State<HomePage> {
             //======================================================================
             // 3) TEXT USER
             //======================================================================
-            TextFormField(decoration: InputDecoration(labelText: 'E-mail', prefixIcon: Icon(Icons.email)),),
-            //======================================================================
+            TextFormField(decoration: InputDecoration(labelText: 'E-mail', prefixIcon: Icon(Icons.email)),controller: _usernameController,),            
             // 4) TEXT PASSWORD
             //======================================================================
             TextFormField(decoration: InputDecoration(labelText: 'Password', prefixIcon: Icon(Icons.vpn_key)),),
@@ -97,7 +98,8 @@ class _HomePageState extends State<HomePage> {
             // 6) BUTTON LOGIN
             //======================================================================
             SizedBox(height: 10.0,),  
-            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => DashboardMenu()),);}, 
+
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => DashboardMenu(username: _usernameController.text,)),);}, 
             color: Colors.blue, 
             child: Text('CLICK TO LOGIN',style: TextStyle(fontSize: 20.0, color: Colors.white, fontWeight: FontWeight.normal),), ),    
             //======================================================================
