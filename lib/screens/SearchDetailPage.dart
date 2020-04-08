@@ -25,6 +25,17 @@ class SearchDetailPage extends StatefulWidget {
 //========================================================================================
 class _SearchDetailPageState extends State<SearchDetailPage> {
   String company = "Please wait...";
+  String fullname;
+  String lineid;
+  String mobileno;
+
+
+          //    _usernameController.text= value.data["username"];
+          // _passwordController.text  = value.data["password"];    
+          // _lineidController.text = value.data["lineid"];
+          // _fullnameController.text = value.data["fullname"];
+          // _mobilenoController.text = value.data["mobileno"];
+          // _companyController.text = value.data["company"];    
 
 //========================================================================================
 // 4) GET DATA FROM DB ?? YES
@@ -39,6 +50,9 @@ class _SearchDetailPageState extends State<SearchDetailPage> {
         .then((value) {
       setState(() {
         company = value.data["company"];
+        fullname = value.data["fullname"];
+        mobileno = value.data["mobileno"];
+        lineid = value.data["lineid"];
       });
     });
   }
@@ -75,10 +89,10 @@ class _SearchDetailPageState extends State<SearchDetailPage> {
             Padding(
               padding: const EdgeInsets.all(20),
             ),
-            Text(
-              company,
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
+            Text( company, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+            // Text( fullname, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),   
+            // Text( mobileno, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+            // Text( lineid, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),                      
           ],
         ),
       ),
