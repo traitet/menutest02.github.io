@@ -48,8 +48,8 @@ class NavDrawer extends StatelessWidget {
           //====================================================            
           ListTile(leading: Icon(Icons.input), title: Text('Welcome'),onTap: () => {},),
           ListTile(leading: Icon(Icons.pages), title: Text('D-Form'),onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => FormPage()),)},),
-          ListTile(leading: Icon(Icons.repeat_one), title: Text('Search'),onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => ReportPage()),)},),  
-          ListTile(leading: Icon(Icons.search), title: Text('Report'),onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => SearchPage()),)},),                            
+          ListTile(leading: Icon(Icons.repeat_one), title: Text('Search'),onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => SearchPage(username: "traitet",)),)},),  
+          ListTile(leading: Icon(Icons.search), title: Text('Report'),onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => ReportPage()),)},),                            
           ListTile(leading: Icon(Icons.verified_user), title: Text('Profile'),onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => UpdateProfilePage(username: "traitet",)),)},),    
           ListTile(leading: Icon(Icons.settings), title: Text('Settings'),onTap: () => {},),
           ListTile(leading: Icon(Icons.border_color), title: Text('Feedback'),onTap: () => {},),          
