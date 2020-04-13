@@ -29,14 +29,6 @@ class _SearchDetailPageState extends State<SearchDetailPage> {
   String lineid;
   String mobileno;
 
-
-          //    _usernameController.text= value.data["username"];
-          // _passwordController.text  = value.data["password"];    
-          // _lineidController.text = value.data["lineid"];
-          // _fullnameController.text = value.data["fullname"];
-          // _mobilenoController.text = value.data["mobileno"];
-          // _companyController.text = value.data["company"];    
-
 //========================================================================================
 // 4) GET DATA FROM DB ?? YES
 //========================================================================================
@@ -83,16 +75,16 @@ class _SearchDetailPageState extends State<SearchDetailPage> {
  //========================================================================================
 // 8) SHOW WIDGET.PRNAME
 //========================================================================================                
-              widget.username,      //??? WHERE FROM
-              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+              widget.username??'',      //??? WHERE FROM
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             Padding(
               padding: const EdgeInsets.all(20),
             ),
-            Text( company, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-            // Text( fullname, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),   
-            // Text( mobileno, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-            // Text( lineid, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),                      
+            Text( company??'', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+            Text( fullname??'', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),   
+            Text( mobileno??'', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+            Text( lineid??'', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),                      
           ],
         ),
       ),

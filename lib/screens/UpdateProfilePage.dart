@@ -42,8 +42,6 @@ class UpdateProfilePage extends StatefulWidget {
 
       super.initState();
 
-
-
       Firestore.instance.collection("TM_USER").document(widget.username)
           .get()
           .then((value) {
@@ -107,7 +105,7 @@ class UpdateProfilePage extends StatefulWidget {
                       //===========================================================
                       // VALIDATE "OK"
                       //===========================================================                         
-                      } else {updateUser(context,{"username": _usernameController.text, "password": _passwordController.text, "fullname": _fullnameController, "lineid": _lineidController, "mobileno": _mobilenoController, "company": _companyController},_usernameController.text);}                        
+                      } else {updateUser(context,{"username": _usernameController.text, "password": _passwordController.text, "fullname": _fullnameController.text, "lineid": _lineidController.text, "mobileno": _mobilenoController.text, "company": _companyController.text},_usernameController.text);}                        
                     },
                   )
           ]

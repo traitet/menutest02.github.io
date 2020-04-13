@@ -16,8 +16,7 @@ Future<void> signupUser(
   // RETURN FUNCTION
   //==============================================================================   
   return 
-  
-  
+
   Firestore.instance
       //==========================================================================
       // SAVE DATA TO DB: CATALOG, DOCUMENTNAME, DATA

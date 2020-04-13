@@ -86,10 +86,11 @@ class _HomePageState extends State<HomePage> {
             //======================================================================
             // 3) TEXT USER
             //======================================================================
-            TextFormField(decoration: InputDecoration(labelText: 'E-mail', prefixIcon: Icon(Icons.email)),controller: _usernameController,),            
+            TextFormField(decoration: InputDecoration(labelText: 'E-mail', prefixIcon: Icon(Icons.email)),controller: _usernameController,),  
+            //======================================================================                      
             // 4) TEXT PASSWORD
             //======================================================================
-            TextFormField(decoration: InputDecoration(labelText: 'Password', prefixIcon: Icon(Icons.vpn_key)),),
+            TextFormField(decoration: InputDecoration(labelText: 'Password', prefixIcon: Icon(Icons.vpn_key)),obscureText: true),
             //======================================================================
             // 5) TEXT COMPANY
             //======================================================================
